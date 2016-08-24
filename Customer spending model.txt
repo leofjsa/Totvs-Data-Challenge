@@ -1,0 +1,22 @@
+lm(formula = ValorTotal ~ HoraCheia + Mon + Tue + Wed + Thu + 
+    Fri, data = dfTrain)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-56.918 -15.925  -6.508  13.549  84.336 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  33.8766     3.5271   9.605  < 2e-16 ***
+HoraCheia     1.8403     0.2136   8.617  < 2e-16 ***
+Mon         -18.1795     3.1078  -5.850 6.51e-09 ***
+Tue         -14.6416     2.8448  -5.147 3.14e-07 ***
+Wed          -6.5355     2.8142  -2.322   0.0204 *  
+Thu         -14.9826     2.8983  -5.169 2.79e-07 ***
+Fri         -16.2666     2.9514  -5.511 4.44e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 24.22 on 1092 degrees of freedom
+Multiple R-squared:  0.1151,	Adjusted R-squared:  0.1102 
+F-statistic: 23.67 on 6 and 1092 DF,  p-value: < 2.2e-16
